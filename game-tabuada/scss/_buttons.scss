@@ -1,0 +1,54 @@
+@use './variables' as *;
+
+.button{
+  padding: .8rem 3.2rem;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  border-radius: .4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 100%;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  
+  &--primary{
+    background: $purple-100;
+    color: $light-100;
+  
+    &:is(:hover, :focus){
+      filter: brightness(1.2);
+    }
+  }
+  
+  &--outline{
+    background: $light-100;
+    color: $purple-100;
+    border-color: $purple-100;
+    outline-color: $purple-100;
+    font-size: 1.4rem;
+  
+    &:is(:hover, :focus){
+      background: $purple-100;
+      color: $light-100;
+    }
+  }
+  
+  &--close{
+    background: $light-100;
+    color: $dark-100;
+    border: 2px solid $purple-100;
+    outline: 2px solid $purple-100;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.4rem;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+  
+    &:is(:hover, :focus){
+      background: $purple-100;
+      color: $light-100;
+    }
+  }
+}

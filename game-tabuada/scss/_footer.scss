@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+
+.footer{
+  padding-block: 2.4rem;
+  background: $purple-100;
+  text-align: center;
+
+  p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: $light-100;
+  }
+}
