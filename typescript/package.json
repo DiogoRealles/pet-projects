@@ -1,0 +1,14 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "TypeScript é um supertset para JavaScript, ou seja, adiciona funcionalidades extras a linguagem JavaScript, como tipagem estática, prevenção de bugs, aplicações mais seguras. <br>\r Pode ser utilizado com frameworks/libs como Express, React e etc. <br>\r Precisa ser compilado em JS. <br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-ts": "tsc --watch ./index.ts",
+    "watch-js": "node --watch ./index.js"
+  },
+  "keywords": [],
+  "author": "Diogo Realles <diogo.realles@id360.com.br> (https://diogorealles.github.io/)",
+  "license": "MIT"
+}
