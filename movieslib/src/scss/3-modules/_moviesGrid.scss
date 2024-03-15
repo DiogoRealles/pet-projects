@@ -1,0 +1,61 @@
+@use '../1-bases/colors';
+@use '../3-modules/mixins';
+
+.container .title{
+  color: colors.$white-100;
+  font-size: 32px;
+  text-align: center;
+  margin: 16px 0 8px;
+}
+
+.title .query-text{
+  color: colors.$yellow-100;
+}
+
+.movies-container{
+  @include mixins.flex(row, flex-start, space-between);
+  flex-wrap: wrap;
+  padding: 16px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.movies-container div{
+  width: 30%;
+  color: colors.$white-100;
+  margin-bottom: 32px;
+  @include mixins.flex(column, flex-start, space-between);
+  background: colors.$black-200;
+  padding: 16px;
+}
+
+.movies-container div img,
+.movies-container div h2,
+.movies-container div p{
+  margin-bottom: 16px;
+}
+
+.movies-container div svg{
+  color: colors.$yellow-100;
+}
+
+.movie-card a{
+  background: colors.$yellow-100;
+  width: 100%;
+  text-align: center;
+  color: colors.$black-100;
+  border: 2px solid colors.$yellow-100;
+  border-radius: 4px;
+  padding-block: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  display: inline-block;
+
+  &:hover{
+    background: transparent;
+    color: colors.$yellow-100;
+    border-color: colors.$yellow-200;
+  }
+}

@@ -1,0 +1,32 @@
+@use './colors';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: colors.$black-100;
+  color: colors.$white-100;
+}
+
+a{
+  text-decoration: none;
+  color: colors.$yellow-100;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    color: colors.$yellow-200;
+  }
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+ul, li{
+  list-style: none;
+}
