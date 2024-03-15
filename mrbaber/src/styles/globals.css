@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .sectionTitle {
+    @apply font-heading text-4xl md:text-6xl text-orange-mrbarber-400 text-left uppercase mb-4 md:mb-8;
+  }
+
+  .btn-primary,
+  button[type="submit"] {
+    @apply flex items-center gap-2 bg-orange-mrbarber-400/80 hover:bg-orange-mrbarber-400 transition-all duration-300 cursor-pointer rounded py-2 px-8
+  }
+}
+
+@layer utilities {
+  .max-container{
+    @apply mx-auto max-w-[1440px];
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
