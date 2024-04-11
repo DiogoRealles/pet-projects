@@ -202,9 +202,6 @@ Outra maneira de nomear um tipo e as propriedades de um objeto. <br>
     console.log(car2.color); // blue
     console.log(car2.wheels); // 3
     console.log(car2.run()); // Vruunn...
-
-<pre>
-  <code>
   </code>
 </pre>
 
