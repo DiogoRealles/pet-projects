@@ -1,0 +1,40 @@
+@use './variables' as *;
+@use './animation';
+
+
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+
+  &.active{
+    pointer-events: all;
+    visibility: visible;
+    opacity: 1;
+
+    .modal__container{
+      animation: fadeDown .3s ease-in-out forwards;
+    }
+  }
+
+  &__container{
+    width: min(100%, 500px);
+    margin-inline: auto;
+    background: $light-100;
+    padding: 2.4rem;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+
+    .button{
+      padding: initial;
+    }
+  }
+}

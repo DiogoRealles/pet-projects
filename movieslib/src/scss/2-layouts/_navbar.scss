@@ -1,0 +1,49 @@
+@use '../1-bases/colors';
+@use '../3-modules/mixins';
+
+#navbar{
+  @include mixins.flex(row, center, space-between);
+  padding: 16px 32px;
+  background: colors.$black-200;
+
+  a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  form{
+    display: flex;
+    align-items: center;
+    
+    input{
+      padding: 10px 24px;
+      border-radius: 4px 0 0 4px;
+      border: none;
+      outline: none;
+      transition: all .3s ease-in-out;
+
+      &:focus, &:hover{
+        box-shadow: 0 0 0 2px colors.$yellow-100;
+      }
+    }
+
+    button{
+      background: colors.$yellow-100;
+      color: colors.$black-100;
+      border: 2px solid colors.$yellow-100;
+      border-radius: 0 4px 4px 0;
+      padding: 8px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+
+      &:hover{
+        background: colors.$yellow-200;
+        border-color: colors.$yellow-200;
+      }
+    }
+  }
+}

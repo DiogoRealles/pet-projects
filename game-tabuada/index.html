@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/script.js" defer type="module"></script>
+  <title>Game Tabuada</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Game da Tabuada</h1>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <form class="form">
+        <div class="form__flex">
+          <div class="form__questions">
+            <span data-js="num1" class="form__question">3</span> X <span data-js="num2" class="form__question">2</span>
+          </div>
+          <label class="sro-response" for="sro-response">Responder</label>
+          <input id="sro-response" data-js="responseInput" class="form__control" type="text" placeholder="Digite sua resposta" maxlength="3"/>
+        </div>
+        
+        <div class="form__group">
+          <button data-js="responseButton" class="button button--primary">Responder</button>
+        </div>
+        
+        <div class="status">
+          <p>Resposta: <span data-js="responseStatus" class=""></span></p>
+        </div>
+        
+        <div class="storeboard">
+          <div>⭕: <span data-js="pointsCorrect" class="correct">0</span></div> | <div>❌: <span data-js="pointsIncorrect" class="incorrect">0</span></div>
+        </div>
+        
+        <div class="form__group">
+          <button data-js="modalButtonOpen" class="button button--outline">Ver tabuada</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p> <a href="./"><strong>Game da Tabuada.</strong></a> <span data-js="yearFooter">0000</span> &copy; Developed by - <strong><a href="https://www.linkedin.com/in/diogorealles" target="_blank">Diogo Realles</a></strong></p>
+  </footer>
+
+  <div data-js="modal" class="modal">
+    <div class="modal__container">
+      <h1>modal</h1>
+      
+      <button data-js="modalButtonClose" class="button button--close">&times;</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+:root{
+  --light-100: #f7f7f7;
+  --dark-100: #101010;
+  --light-glass: rgba(255, 255, 255, .8);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+}

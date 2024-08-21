@@ -1,0 +1,101 @@
+@use './variables' as *;
+
+
+.main{
+  .container{
+    .form{
+      width: min(100%, 50rem);
+      margin-inline: auto;
+      padding: 4rem;
+      background: $light-100;
+      margin-top: -5rem;
+      margin-bottom: 4rem;
+      border-radius: .6rem;
+      box-shadow: 0 .2rem 1.8rem $purple-shadow-100;
+
+      &__flex{
+        display: flex;
+        gap: 1.6rem;
+        margin-bottom: 4rem;
+      }
+
+      &__questions{
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+      }
+
+      &__question{
+        font-size: 4rem;
+        color: $dark-100;
+        font-weight: 700;
+      }
+
+      .sro-response{
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+      }
+
+      &__control{
+        width: 100%;
+        padding: .8rem 1.6rem;
+        border: 1px solid $grey-100;
+        outline: 1px solid $grey-100;
+        border-radius: .4rem;
+        font-size: 2.4rem;
+
+        &:is(:hover, :focus){
+          border-color: $purple-100;
+          outline-color: $purple-100;
+        }
+        
+      }
+
+      &__group{
+        text-align: center;
+        margin-bottom: 2.4rem;
+      }
+
+      .status{
+        text-align: center;
+        margin-bottom: 2.4rem;
+
+        p{
+          font-size: 1.8rem;
+
+          span{
+            &.correct{
+              color: $green;
+            }
+
+            &.incorrect{
+              color: $red;
+            }
+          }
+        }
+      }
+
+      .storeboard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+        margin-bottom: 2.4rem;
+        font-size: 4rem;
+
+        div{
+          span{
+            &.correct{
+              color: $green;
+            }
+
+            &.incorrect{
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
